@@ -55,4 +55,3 @@ console.log(replacedText);
 // კი სტრინგი პრიმიტიული ტიპია
 // 5)ჩამოთვალე რა მეთოდები ვისწავლეთ მაგ -> length(პასუხი თეორიულად გაეცი)
 // slice,charAt,split,toLowerCase,toUpperCase,trim,length,replace,includes,concat
-
