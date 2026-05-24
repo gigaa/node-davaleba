@@ -47,7 +47,6 @@ promise2
   });
 
 Promise.allSettled([promise1, promise2]).then((results) => {
-  console.log("--- ჯგუფური დამუშავების შედეგები ---");
 
   results.forEach((result, index) => {
     if (result.status === "fulfilled") {
