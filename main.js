@@ -1,5 +1,4 @@
 const fs = require("fs/promises");
-const { json } = require("stream/consumers");
 // 1)წაიკითხე ყველა რიცხვი ფაილიდან, გამოთვალე მათი ჯამი და ჩაწერე სხვა ფაილში
 
 async function main1() {
@@ -121,4 +120,3 @@ async function filterUsers() {
 }
 
 filterUsers();
-
