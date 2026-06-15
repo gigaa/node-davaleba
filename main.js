@@ -35,6 +35,7 @@ async function main3() {
 }
 
 main3();
+
 // 4)წაიკითხე მონაცემები ორ სხვადასხვა ფაილიდან და ჩაწერე ერთ ფაილში
 
 async function main4() {
