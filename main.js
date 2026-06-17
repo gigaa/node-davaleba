@@ -69,22 +69,17 @@ const path = require("path");
 
 async function handleMessage() {
     try {
-        // მთავარი ფოლდერის და message.txt-ის გზები
         const mainDirPath = path.join(process.cwd(), '..'); 
         const txtFilePath = path.join(mainDirPath, 'message.txt');
 
-        // 1. ვწერთ საწყის ტექსტს message.txt-ში
         const initialText = "Hello from Node.js!";
         await fs.writeFile(txtFilePath, initialText, 'utf-8');
         console.log("✓ message.txt შეიქმნა საწყისი ტექსტით.");
 
-        // 2. ვკითხულობთ ახლახან ჩაწერილ ტექსტს
         const data = await fs.readFile(txtFilePath, 'utf-8');
         
-        // 3. ვატრიალებთ სტრინგს (მაგ: "Hello" -> "olleH")
         const reversedText = data.split('').reverse().join('');
 
-        // 4. ვწერთ შეტრიალებულ ტექსტს ისევ იგივე ფაილში
         await fs.writeFile(txtFilePath, reversedText, 'utf-8');
         console.log("✓ message.txt-ში ტექსტი წარმატებით შეტრიალდა!");
 
@@ -188,4 +183,3 @@ const server = http.createServer((req, res) => {
 server.listen(PORT, () => {
   console.log(`Server Run: http://localhost:${PORT}`);
 });
-
