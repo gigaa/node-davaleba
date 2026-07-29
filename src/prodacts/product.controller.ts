@@ -25,7 +25,7 @@ export class ProductController {
   }
 
   @Post('/prodact')
-  createUser(@Body() body: ProductDTO) {
+  createProdact(@Body() body: ProductDTO) {
     console.log(body);
     return this.ProductService.createProduct(body);
   }
